@@ -1,0 +1,156 @@
+.resume-page { background: var(--off-white); }
+
+.resume__layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.resume__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 92px;
+}
+
+.resume__profile {
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.resume__profile h3 {
+  font-size: 1.25rem;
+}
+
+.resume__role-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume__university {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.resume__download-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.resume__view-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.88rem;
+  padding: 10px 20px;
+}
+
+.resume__highlights {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.resume__highlights h4 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.resume__fact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.resume__fact:last-child { border-bottom: none; }
+
+.resume__fact-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.resume__fact-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+/* Preview */
+.resume__preview-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.resume__preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  padding: 12px 20px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btn-sm {
+  font-size: 0.82rem;
+  padding: 7px 16px;
+}
+
+.resume__pdf-viewer {
+  background: #e5e5e5;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  overflow: hidden;
+  min-height: 700px;
+}
+
+.resume__iframe {
+  width: 100%;
+  height: 750px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .resume__layout { grid-template-columns: 1fr; }
+  .resume__sidebar { position: static; }
+  .resume__pdf-viewer { min-height: 500px; }
+  .resume__iframe { height: 500px; }
+}
